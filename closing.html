@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>D2AI 2026 · Closing Slides</title>
+<style>
+:root{--navy:#0a1d39;--ink:#132c4a;--muted:#66788d;--cyan:#05b8d8;--paper:#f8fbfd;--line:#cbdde8}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#061528;color:var(--ink);font-family:Inter,"Aptos","Helvetica Neue",Arial,sans-serif}
+#stage{position:absolute;width:1600px;height:900px;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--scale,1));transform-origin:center;overflow:hidden;background:white;box-shadow:0 18px 80px #0008}
+.slide{position:absolute;inset:0;display:none;overflow:hidden;background:var(--paper)}.slide.active{display:block}.slide::after{content:"";position:absolute;right:-150px;bottom:-170px;width:520px;height:520px;border:1px solid #2b87ae15;border-radius:50%;box-shadow:0 0 0 70px #2b87ae0a,0 0 0 140px #2b87ae08;pointer-events:none}.slide.dark{background:var(--navy);color:#fff}.slide.dark::after{border-color:#ffffff18;box-shadow:0 0 0 70px #ffffff0b,0 0 0 140px #ffffff07}
+.photo-cover{position:absolute;inset:0;background:linear-gradient(90deg,#06162eea 0%,#071b36d8 46%,#0a1d3999 100%),url('closing-assets/shenyang.webp') center/cover}.cover-brand{position:absolute;top:55px;left:90px;color:#16c8e5;font-size:24px;letter-spacing:.12em;font-weight:800;z-index:2}.cover-icdm{position:absolute;right:70px;top:36px;width:320px;height:145px;object-fit:contain;z-index:2}.cover-title{position:absolute;left:90px;top:250px;width:1250px;z-index:2}.cover-title .kicker{color:#37d1ed}.cover-title h1{font-size:96px;line-height:1.02;letter-spacing:-.045em;margin:0}.cover-title .long{font-size:35px;line-height:1.23;margin-top:24px;font-weight:620;max-width:1050px}.cover-meta{font-size:28px;margin-top:50px;color:#d8edf7}.cover-meta strong{color:#fff}.cover-bottom{position:absolute;bottom:62px;left:90px;right:90px;border-top:1px solid #ffffff6b;padding-top:25px;color:#d5ecf4;font-size:25px;z-index:2;display:flex;justify-content:space-between}
+.topline{position:absolute;left:82px;right:82px;top:52px;display:flex;align-items:center;justify-content:space-between;height:72px;z-index:2}.brand{font-weight:900;letter-spacing:.08em;color:var(--cyan);font-size:25px}.brand span{font-weight:500;color:var(--muted);letter-spacing:.04em}.logo-box{display:flex;align-items:center;justify-content:center;width:260px;height:88px;background:var(--navy);border-radius:4px}.icdm{width:244px;height:74px;object-fit:contain}.content{position:absolute;top:154px;left:82px;right:82px;bottom:100px;z-index:1}.kicker{color:#168db6;font-size:22px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin:0 0 16px}h2{font-size:57px;line-height:1.1;letter-spacing:-.035em;font-weight:800;margin:0}.footer{position:absolute;bottom:38px;left:82px;right:82px;display:flex;justify-content:space-between;align-items:center;color:#8294a5;font-size:18px;letter-spacing:.02em;z-index:2}.dark .footer{color:#c0d5e1}
+.award-grid{display:grid;grid-template-columns:575px 1fr;gap:64px;align-items:start;margin-top:35px}.award-copy{border-top:5px solid var(--cyan);padding-top:23px}.award-label{font-size:18px;font-weight:800;letter-spacing:.13em;color:#168db6;text-transform:uppercase}.paper-title{font-size:35px;line-height:1.22;font-weight:750;letter-spacing:-.02em;margin:16px 0 25px;color:var(--navy)}.award-people{font-size:24px;line-height:1.39;font-weight:650;color:#243d57}.affiliations{font-size:18px;line-height:1.4;color:#60768a;margin-top:20px}.certificate{display:block;width:100%;max-height:490px;object-fit:contain;background:#fff;border:1px solid #d4e2eb;box-shadow:15px 17px 0 #d9f0f7}.certificate-link{display:block;text-decoration:none}.certificate-caption{font-size:16px;color:#61798c;margin-top:12px;text-align:right}
+.sponsor-intro{font-size:28px;color:#526a80;margin-top:20px}.sponsor-row{display:grid;grid-template-columns:repeat(3,1fr);gap:54px;margin-top:92px;align-items:center}.sponsor{height:260px;display:flex;align-items:center;justify-content:center;border-top:5px solid var(--cyan);border-bottom:1px solid var(--line);padding:35px}.sponsor img{display:block;width:100%;max-height:170px;object-fit:contain}.sponsor .vecton{max-height:128px}.sponsor .eigenflow{max-height:140px}.closing{position:absolute;top:260px;left:90px;max-width:1150px;z-index:2}.closing .kicker{color:#37d1ed}.closing h1{font-size:106px;line-height:1.03;letter-spacing:-.045em;margin:0}.closing p{font-size:36px;line-height:1.4;color:#d8eaf4;margin:36px 0 0}.closing .site{font-size:26px;margin-top:80px;color:#51d1e8}
+.controls{position:fixed;right:18px;bottom:14px;z-index:99;color:#b9d7e5;font:14px Arial,sans-serif;display:flex;gap:8px;align-items:center}.controls button{background:#ffffff22;border:1px solid #ffffff55;border-radius:4px;color:#fff;padding:7px 12px;cursor:pointer;font-size:18px}
+@media print{html,body{overflow:visible;background:#fff}#stage{position:static;transform:none!important;width:1600px;height:auto;box-shadow:none}.slide{position:relative;display:block!important;width:1600px;height:900px;page-break-after:always;break-after:page}.controls{display:none}@page{size:16in 9in;margin:0}}
+</style>
+</head>
+<body>
+<main id="stage" aria-label="D2AI closing slides">
+<section class="slide dark active" aria-label="Closing title">
+  <div class="photo-cover"></div><div class="cover-brand">IEEE ICDM 2026 WORKSHOP</div><img class="cover-icdm" src="closing-assets/icdm-2026-logo.png" alt="ICDM 2026 logo">
+  <div class="cover-title"><p class="kicker">D2AI 2026</p><h1>Closing</h1><p class="long">International Workshop on Data &amp; Database Systems for Modern AI</p><p class="cover-meta"><strong>15 November 2026</strong> · Shenyang, China · Room: Seoul</p></div>
+  <div class="cover-bottom"><span>Paper Awards · Closing Remarks</span><span>01</span></div>
+</section>
+<section class="slide" aria-label="Best Paper Award">
+  <div class="topline"><div class="brand">D2AI <span>2026</span></div><span class="logo-box"><img class="icdm" src="closing-assets/icdm-2026-logo.png" alt="ICDM 2026"></span></div>
+  <div class="content"><p class="kicker">Paper Awards</p><h2>Best Paper Award</h2><div class="award-grid"><div class="award-copy"><p class="award-label">Award-winning paper</p><p class="paper-title">ScaleDiag: Diagnosing the Limits of Test-Time Scaling in GUI Grounding</p><p class="award-people">Chen Liu¹, Zhen Fang¹, Xin Yu², Dadong Wang³, and Ling Chen¹</p><p class="affiliations">¹ University of Technology Sydney, Australia<br>² Adelaide University, Australia<br>³ CSIRO, Australia</p></div><div><a class="certificate-link" href="closing-assets/D2AI_2026_Best_Paper_Award.pdf" target="_blank" aria-label="Open original Best Paper Award certificate"><img class="certificate" src="closing-assets/best-paper-certificate.png" alt="Best Paper Award certificate with recipients and paper title"></a><p class="certificate-caption">Certificate of recognition · Open original PDF</p></div></div></div>
+  <div class="footer"><span>D2AI 2026 · 15 November 2026</span><span>02</span></div>
+</section>
+<section class="slide" aria-label="Best Student Paper Award">
+  <div class="topline"><div class="brand">D2AI <span>2026</span></div><span class="logo-box"><img class="icdm" src="closing-assets/icdm-2026-logo.png" alt="ICDM 2026"></span></div>
+  <div class="content"><p class="kicker">Paper Awards</p><h2>Best Student Paper Award</h2><div class="award-grid"><div class="award-copy"><p class="award-label">Award-winning paper</p><p class="paper-title">The Oracle Is Not Free: Lifecycle-Aware Cost Modeling for Quantum Database Filtering</p><p class="award-people">Wenke Yang¹, Kongzhang Hao², Dong Wen¹, Xin Cao¹, and Serge Gaspers¹</p><p class="affiliations">¹ UNSW Sydney, Australia<br>² Google, Australia</p></div><div><a class="certificate-link" href="closing-assets/D2AI_2026_Best_Student_Paper_Award.pdf" target="_blank" aria-label="Open original Best Student Paper Award certificate"><img class="certificate" src="closing-assets/best-student-paper-certificate.png" alt="Best Student Paper Award certificate with recipients and paper title"></a><p class="certificate-caption">Certificate of recognition · Open original PDF</p></div></div></div>
+  <div class="footer"><span>D2AI 2026 · 15 November 2026</span><span>03</span></div>
+</section>
+<section class="slide" aria-label="Sponsors">
+  <div class="topline"><div class="brand">D2AI <span>2026</span></div><span class="logo-box"><img class="icdm" src="closing-assets/icdm-2026-logo.png" alt="ICDM 2026"></span></div>
+  <div class="content"><p class="kicker">People and partners</p><h2>Sponsors</h2><p class="sponsor-intro">With thanks to our sponsors</p><div class="sponsor-row"><div class="sponsor"><img src="closing-assets/jiuxin-cropped.png" alt="9XIN Intelligence"></div><div class="sponsor"><img class="vecton" src="closing-assets/vecton.svg" alt="Vecton AI"></div><div class="sponsor"><img class="eigenflow" src="closing-assets/eigenflow.png" alt="EigenFlow"></div></div></div>
+  <div class="footer"><span>D2AI 2026 · Closing</span><span>04</span></div>
+</section>
+<section class="slide dark" aria-label="Thank you">
+  <div class="photo-cover"></div><img class="cover-icdm" src="closing-assets/icdm-2026-logo.png" alt="ICDM 2026 logo"><div class="closing"><p class="kicker">D2AI 2026</p><h1>Thank you!</h1><p>Thank you for joining us in Shenyang and online.</p><p class="site">d2ai-workshop.github.io</p></div><div class="cover-bottom"><span>Shenyang, China · 15 November 2026</span><span>05</span></div>
+</section>
+</main>
+<div class="controls"><button id="prev" aria-label="Previous slide">‹</button><span id="count">1 / 5</span><button id="next" aria-label="Next slide">›</button></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let index=0;
+function fit(){document.documentElement.style.setProperty('--scale',Math.min(innerWidth/1600,innerHeight/900));}fit();addEventListener('resize',fit);
+function show(n){index=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>s.classList.toggle('active',i===index));document.getElementById('count').textContent=`${index+1} / ${slides.length}`;location.hash=`slide-${index+1}`;}
+document.getElementById('prev').onclick=()=>show(index-1);document.getElementById('next').onclick=()=>show(index+1);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(index+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(index-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)});
+let sx=0;addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(index+(dx<0?1:-1))},{passive:true});
+const hash=location.hash.match(/slide-(\d+)/);if(hash)show(Number(hash[1])-1);
+</script>
+</body>
+</html>
